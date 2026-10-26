@@ -82,38 +82,6 @@ fetch('./content.json')
     console.warn('Content hydration notice:', err);
   });
 
-// Slider video playback management: pause offscreen videos to save resources
-const sliderVideos = document.querySelectorAll('.media-slider video');
-if (sliderVideos.length > 0 && 'IntersectionObserver' in window) {
-  const videoObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const video = entry.target;
-      if (entry.isIntersecting) {
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(() => {});
-        }
-      } else {
-        video.pause();
-      }
-    });
-  }, { threshold: 0.05 });
-
-  sliderVideos.forEach((v) => videoObserver.observe(v));
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-      sliderVideos.forEach((v) => v.pause());
-    } else {
-      sliderVideos.forEach((v) => {
-        const rect = v.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          v.play().catch(() => {});
-        }
-      });
-    }
-  });
-}
 
 // ==========================================================================
 // SHARED INFINITE DRAGGABLE SLIDER ENGINE

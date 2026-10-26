@@ -50,13 +50,12 @@ The application is a single-page responsive web app structured in `index.html`:
 | 7 | `#exceptional-homes` (`.exceptional-homes`) | **Client Showcase** | `index.html` (300–336) | 3 verified client installation cards: *The Reddys' Temple* (Devanahalli, Bengaluru), *Mr. Kumar's Mandir* (Nandi Hills), and *Bafna's Pooja Room* (Coimbatore). |
 | 8 | `#founders` (`.founders-section`) | **Meet the Founders & Company Background** | `index.html` (337–479) | 3 integrated subsections:<br>1. *Founders Bio & Photo:* Bhaskar Kumar (CEO) & Aviral Kedia (Co-founder) with AP MoU signing photo.<br>2. *Artisan Heritage Slider:* 6 slides showcasing mobilization of traditional wood/stone sculptors across South India.<br>3. *Press & Milestones:* PTI press release, NDTV Profit news coverage, and Infrakraft company press archive links. |
 | 9 | `#offer` (`.offer`) | **The Showroom Setup Offer** | `index.html` (480–549) | The one-time ₹5 lakh setup package broken into 6 cards: 8×8 ft display unit, 43" 4K TV & live feed, material sample library, lookbooks & digital app, sales collateral kit, and daily 9am–9pm sales consultation support. |
-| 10 | `.how` (Part 1) | **Category Opportunity** | `index.html` (550) | Two-column narrative on why custom pooja rooms are an untapped specialist category for luxury home clients. |
-| 11 | `.how` (Part 2) | **Simple Store Role** | `index.html` (551) | 3-step operational workflow: *1. You make the introduction*, *2. Show the possibilities*, *3. We design, sell and execute*. |
-| 12 | `#returns` (`.returns`) | **Commission & Investment Payback** | `index.html` (552–561) | Commercial partnership structure: 25% commission before ₹5L payback, 15% thereafter. Includes an illustrative 5-order cumulative commission and ROI schedule based on a ₹7L average order value. |
-| 13 | `.qualify` | **Who This Is For** | `index.html` (562) | Partner qualification criteria (established furniture/interior showroom, 8×8 ft display space, premium clientele, readiness for ₹5L setup investment). |
-| 14 | `#apply` (`.cta`) | **Next Step / Final CTA** | `index.html` (563) | High-emphasis closing CTA section linking directly to WhatsApp partner onboarding. |
-| 15 | `.fab-button` | **Floating Action Button** | `index.html` (564) | Fixed bottom-right pill CTA button (`✦ Apply to partner`) linking to WhatsApp. |
-| 16 | `footer` | **Footer** | `index.html` (566) | Minimalist closing brand stamp: *"SVVAYAM POOJA ROOMS · SHOWROOM PARTNER PROGRAMME"*. |
+| 10 | `.how` | **Simple Store Role** | `index.html` (550) | 3-step operational workflow: *1. You make the introduction*, *2. Show the possibilities*, *3. We design, sell and execute*. |
+| 11 | `#returns` (`.returns`) | **Commission & Investment Payback** | `index.html` (551–560) | Commercial partnership structure: 25% commission before ₹5L payback, 15% thereafter. Includes an illustrative 5-order cumulative commission and ROI schedule based on a ₹7L average order value. |
+| 12 | `.qualify` | **Who This Is For** | `index.html` (561) | Partner qualification criteria (established furniture/interior showroom, 8×8 ft display space, premium clientele, readiness for ₹5L setup investment). |
+| 13 | `#apply` (`.cta`) | **Next Step / Final CTA** | `index.html` (562) | High-emphasis closing CTA section linking directly to WhatsApp partner onboarding. |
+| 14 | `.fab-button` | **Floating Action Button** | `index.html` (563) | Fixed bottom-right pill CTA button (`✦ Apply to partner`) linking to WhatsApp. |
+| 15 | `footer` | **Footer** | `index.html` (565) | Minimalist closing brand stamp: *"SVVAYAM POOJA ROOMS · SHOWROOM PARTNER PROGRAMME"*. |
 
 ---
 
@@ -129,18 +128,18 @@ flowchart TD
 
 1. **Hero Media Slider (`.media-slider`)**
    * **Location:** Right below the Hero text (`index.html`, lines 41–120).
-   * **Behavior:** Infinite marquee ribbon with 11 cards. Automatically glides leftwards at `0.6 px/frame` (stops if `prefers-reduced-motion` is active). Supports drag with velocity-based momentum. Videos inside (`75.mp4`, `77.mp4`, `80.mp4`, `81.mp4`) automatically play when entering viewport and pause when scrolled out or tab is switched (`IntersectionObserver` + `visibilitychange`).
-   * **Controller:** Instantiated via `createInfiniteDraggableSlider()` in `app.js` (lines 121–386).
+   * **Behavior:** Infinite marquee ribbon with 11 cards (crisp photography stills replacing heavy videos, dramatically improving page load speed). Automatically glides leftwards at `0.6 px/frame` (stops if `prefers-reduced-motion` is active). Supports drag with velocity-based momentum and mousewheel horizontal translation.
+   * **Controller:** Instantiated via `createInfiniteDraggableSlider()` in `app.js` (lines 89–354).
 
 2. **Artisan Heritage & Scale Slider (`.craftsmen-slider`)**
    * **Location:** Inside `#founders` section (`index.html`, lines 376–442).
    * **Behavior:** 6 high-resolution slides depicting traditional craftsmen. Glides continuously at `0.5 px/frame`. Synchronized with previous/next chevron buttons (smooth step by 1 slide width), 6 clickable pagination dots, and keyboard left/right arrow navigation.
-   * **Controller:** Shares the exact same core engine (`createInfiniteDraggableSlider()`) with an attached dot-update loop and navigation listeners in `app.js` (lines 388–458).
+   * **Controller:** Shares the exact same core engine (`createInfiniteDraggableSlider()`) with an attached dot-update loop and navigation listeners in `app.js` (lines 356–426).
 
 3. **Materials Card Slideshows (`.material-card[data-slideshow]`)**
    * **Location:** Inside `#materials` (`index.html`, lines 127–284).
    * **Behavior:** Independent 3-second auto-advancing slideshows for each material card. Pauses on mouse hover and resumes on mouse leave. Supports horizontal touch swiping (35px minimum threshold). Employs CSS opacity cross-fading (`transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1)`) and scales the active image slightly on card hover. Preloads the next slide image eagerly before it transitions.
-   * **Controller:** Dedicated loop in `app.js` (lines 460–558).
+   * **Controller:** Dedicated loop in `app.js` (lines 428–526).
 
 ---
 
@@ -152,21 +151,18 @@ flowchart TD
 |----------------------|--------------------------|------------|-----------|---------------------------|------------------|
 | `./assets/svvayam-logo.webp` | Header brand link | 338×64 | 6.4 KB | Optimized WebP | Svvayam Pooja Rooms logo |
 | `./assets/svvayam-logo.png` | Header fallback | 338×64 | 10.4 KB | Optimized PNG | Svvayam Pooja Rooms logo |
-| `./assets/slider/75.mp4` | Hero Slider (Slide 1) | 1080×1920 | 64.1 MB | H.264 MP4 Video | Stone Temple in Production |
-| `./assets/slider/75-poster.jpg` | Hero Slider (Poster 1) | 1920×1080 | 316.9 KB | Optimized JPEG | Video poster |
+| `./assets/slider/75-poster.jpg` | Hero Slider (Slide 1) | 1920×1080 | 316.9 KB | Optimized JPEG | Bespoke carved wooden temple architecture |
 | `./assets/slider/76.png` | Hero Slider (Slide 2) | 1200×1600 | 4.15 MB | Uncompressed PNG | Handcrafted sanctum detailing |
-| `./assets/slider/77.mp4` | Hero Slider (Slide 3) | 1080×1920 | 15.9 MB | H.264 MP4 Video | Custom Mandap Assembly |
-| `./assets/slider/77-poster.jpg` | Hero Slider (Poster 3) | 1920×1080 | 371.4 KB | Optimized JPEG | Video poster |
+| `./assets/slider/77-poster.jpg` | Hero Slider (Slide 3) | 1920×1080 | 371.4 KB | Optimized JPEG | Precision carving and temple finishing |
 | `./assets/slider/78.png` | Hero Slider (Slide 4) | 1200×1600 | 4.01 MB | Uncompressed PNG | Intricate wooden temple archway |
 | `./assets/slider/79.png` | Hero Slider (Slide 5) | 1200×1600 | 3.42 MB | Uncompressed PNG | Illuminated pooja room interior |
-| `./assets/slider/80.mp4` | Hero Slider (Slide 6) | 1080×1920 | 13.7 MB | H.264 MP4 Video | Artisan Wood Inlay Work |
-| `./assets/slider/80-poster.jpg` | Hero Slider (Poster 6) | 1920×1080 | 310.0 KB | Optimized JPEG | Video poster |
-| `./assets/slider/81.mp4` | Hero Slider (Slide 7) | 1080×1920 | 64.1 MB | H.264 MP4 Video | Sanctum Installation Complete |
-| `./assets/slider/81-poster.jpg` | Hero Slider (Poster 7) | 1920×1080 | 261.8 KB | Optimized JPEG | Video poster |
-| `./assets/slider/82.png` | Hero Slider (Slide 8) | 1200×1600 | 3.72 MB | Uncompressed PNG | Custom home mandir lattice |
-| `./assets/slider/83.png` | Hero Slider (Slide 9) | 1200×1600 | 4.98 MB | Uncompressed PNG | Handcrafted teakwood mandir |
-| `./assets/slider/84.png` | Hero Slider (Slide 10) | 1200×1600 | 3.07 MB | Uncompressed PNG | Contemporary luxury puja room |
-| `./assets/slider/85.png` | Hero Slider (Slide 11) | 1200×1600 | 4.09 MB | Uncompressed PNG | Artisan wooden temple craft |
+| `./assets/slider/80-poster.jpg` | Hero Slider (Slide 6) | 1920×1080 | 310.0 KB | Optimized JPEG | Master craftsman wood carving in progress |
+| `./assets/slider/81-poster.jpg` | Hero Slider (Slide 7) | 1920×1080 | 261.8 KB | Optimized JPEG | Completed luxury home temple showcase |
+| `./assets/slider/81.png` | Hero Slider (Slide 8) | 1200×1600 | 4.48 MB | Uncompressed PNG | Bespoke temple brass embellishments |
+| `./assets/slider/82.png` | Hero Slider (Slide 9) | 1200×1600 | 3.72 MB | Uncompressed PNG | Custom home mandir lattice |
+| `./assets/slider/83.png` | Hero Slider (Slide 10) | 1200×1600 | 4.98 MB | Uncompressed PNG | Handcrafted teakwood mandir |
+| `./assets/slider/84.png` | Hero Slider (Slide 11) | 1200×1600 | 3.07 MB | Uncompressed PNG | Contemporary luxury puja room |
+| `./assets/slider/85.png` | Hero Slider (Slide 12) | 1200×1600 | 4.09 MB | Uncompressed PNG | Artisan wooden temple craft |
 | `./assets/materials/brass-gopuram-hero.webp` | Materials: Brass (Slide 1) | 1080×1350 | 120.6 KB | Optimized WebP | Hand-finished brass mandir gopuram |
 | `./assets/materials/brass-gopuram-hero.jpg` | Materials: Brass fallback | 1080×1350 | 796.9 KB | High-res JPEG | Fallback image |
 | `./assets/materials/brass-01.webp` | Materials: Brass (Slide 2) | 1080×1350 | 85.0 KB | Optimized WebP | Polished brass kalasam finial |
@@ -213,8 +209,8 @@ The following files exist in `assets/` but are **not referenced** in `index.html
 ### Missing or Broken References
 * **Verified:** **0 missing local files**. All 64 local assets referenced in `index.html` exist on disk and pass `npm run build`.
 
-### Performance Bottlenecks & Heavy Assets
-* **Slider Videos Total:** `75.mp4` (64.1 MB) + `81.mp4` (64.1 MB) + `77.mp4` (15.9 MB) + `80.mp4` (13.7 MB) = **157.8 MB**. Even though video loading is deferred, this is massive for cellular mobile networks.
+### Performance & Media Optimization
+* **Slider Media Optimized:** Heavy `.mp4` video files (~165 MB total) were completely removed from the project; the hero slider now loads crisp photography stills (`75-poster.jpg`, `77-poster.jpg`, `80-poster.jpg`, `81-poster.jpg`), yielding instant, lightweight loading on mobile connections.
 * **Large PNG Fallbacks:** `assets/materials/brass-04.png` (1.48 MB), `assets/materials/stone-02.png` (1.05 MB), `assets/customers/73.png` (1.52 MB).
 
 ### External Assets & Third-Party CDNs
