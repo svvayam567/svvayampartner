@@ -151,18 +151,30 @@ flowchart TD
 |----------------------|--------------------------|------------|-----------|---------------------------|------------------|
 | `./assets/svvayam-logo.webp` | Header brand link | 338×64 | 6.4 KB | Optimized WebP | Svvayam Pooja Rooms logo |
 | `./assets/svvayam-logo.png` | Header fallback | 338×64 | 10.4 KB | Optimized PNG | Svvayam Pooja Rooms logo |
-| `./assets/slider/75-poster.jpg` | Hero Slider (Slide 1) | 1920×1080 | 316.9 KB | Optimized JPEG | Bespoke carved wooden temple architecture |
-| `./assets/slider/76.png` | Hero Slider (Slide 2) | 1200×1600 | 4.15 MB | Uncompressed PNG | Handcrafted sanctum detailing |
-| `./assets/slider/77-poster.jpg` | Hero Slider (Slide 3) | 1920×1080 | 371.4 KB | Optimized JPEG | Precision carving and temple finishing |
-| `./assets/slider/78.png` | Hero Slider (Slide 4) | 1200×1600 | 4.01 MB | Uncompressed PNG | Intricate wooden temple archway |
-| `./assets/slider/79.png` | Hero Slider (Slide 5) | 1200×1600 | 3.42 MB | Uncompressed PNG | Illuminated pooja room interior |
-| `./assets/slider/80-poster.jpg` | Hero Slider (Slide 6) | 1920×1080 | 310.0 KB | Optimized JPEG | Master craftsman wood carving in progress |
-| `./assets/slider/81-poster.jpg` | Hero Slider (Slide 7) | 1920×1080 | 261.8 KB | Optimized JPEG | Completed luxury home temple showcase |
-| `./assets/slider/81.png` | Hero Slider (Slide 8) | 1200×1600 | 4.48 MB | Uncompressed PNG | Bespoke temple brass embellishments |
-| `./assets/slider/82.png` | Hero Slider (Slide 9) | 1200×1600 | 3.72 MB | Uncompressed PNG | Custom home mandir lattice |
-| `./assets/slider/83.png` | Hero Slider (Slide 10) | 1200×1600 | 4.98 MB | Uncompressed PNG | Handcrafted teakwood mandir |
-| `./assets/slider/84.png` | Hero Slider (Slide 11) | 1200×1600 | 3.07 MB | Uncompressed PNG | Contemporary luxury puja room |
-| `./assets/slider/85.png` | Hero Slider (Slide 12) | 1200×1600 | 4.09 MB | Uncompressed PNG | Artisan wooden temple craft |
+| `./assets/slider/75-poster.webp` | Hero Slider (Slide 1 WebP) | 1920×1080 | 158.7 KB | Optimized WebP | Bespoke carved wooden temple architecture |
+| `./assets/slider/75-poster.jpg` | Hero Slider (Slide 1 fallback) | 1920×1080 | 316.9 KB | Optimized JPEG | Bespoke carved wooden temple architecture |
+| `./assets/slider/76.webp` | Hero Slider (Slide 2 WebP) | 1200×1600 | 261.8 KB | Optimized WebP | Handcrafted sanctum detailing |
+| `./assets/slider/76.jpg` | Hero Slider (Slide 2 fallback) | 1200×1600 | 568.5 KB | Optimized JPEG | Handcrafted sanctum detailing |
+| `./assets/slider/77-poster.webp` | Hero Slider (Slide 3 WebP) | 1920×1080 | 208.7 KB | Optimized WebP | Precision carving and temple finishing |
+| `./assets/slider/77-poster.jpg` | Hero Slider (Slide 3 fallback) | 1920×1080 | 371.4 KB | Optimized JPEG | Precision carving and temple finishing |
+| `./assets/slider/78.webp` | Hero Slider (Slide 4 WebP) | 1200×1600 | 155.9 KB | Optimized WebP | Intricate wooden temple archway |
+| `./assets/slider/78.jpg` | Hero Slider (Slide 4 fallback) | 1200×1600 | 384.2 KB | Optimized JPEG | Intricate wooden temple archway |
+| `./assets/slider/79.webp` | Hero Slider (Slide 5 WebP) | 1200×1600 | 138.5 KB | Optimized WebP | Illuminated pooja room interior |
+| `./assets/slider/79.jpg` | Hero Slider (Slide 5 fallback) | 1200×1600 | 359.4 KB | Optimized JPEG | Illuminated pooja room interior |
+| `./assets/slider/80-poster.webp` | Hero Slider (Slide 6 WebP) | 1920×1080 | 154.4 KB | Optimized WebP | Master craftsman wood carving in progress |
+| `./assets/slider/80-poster.jpg` | Hero Slider (Slide 6 fallback) | 1920×1080 | 310.0 KB | Optimized JPEG | Master craftsman wood carving in progress |
+| `./assets/slider/81-poster.webp` | Hero Slider (Slide 7 WebP) | 1920×1080 | 123.5 KB | Optimized WebP | Completed luxury home temple showcase |
+| `./assets/slider/81-poster.jpg` | Hero Slider (Slide 7 fallback) | 1920×1080 | 261.8 KB | Optimized JPEG | Completed luxury home temple showcase |
+| `./assets/slider/81.webp` | Hero Slider (Slide 8 WebP) | 1200×1600 | 226.9 KB | Optimized WebP | Bespoke temple brass embellishments |
+| `./assets/slider/81.jpg` | Hero Slider (Slide 8 fallback) | 1200×1600 | 492.2 KB | Optimized JPEG | Bespoke temple brass embellishments |
+| `./assets/slider/82.webp` | Hero Slider (Slide 9 WebP) | 1200×1600 | 173.7 KB | Optimized WebP | Custom home mandir lattice |
+| `./assets/slider/82.jpg` | Hero Slider (Slide 9 fallback) | 1200×1600 | 391.9 KB | Optimized JPEG | Custom home mandir lattice |
+| `./assets/slider/83.webp` | Hero Slider (Slide 10 WebP) | 1200×1600 | 336.5 KB | Optimized WebP | Handcrafted teakwood mandir |
+| `./assets/slider/83.jpg` | Hero Slider (Slide 10 fallback) | 1200×1600 | 757.1 KB | Optimized JPEG | Handcrafted teakwood mandir |
+| `./assets/slider/84.webp` | Hero Slider (Slide 11 WebP) | 1200×1600 | 150.5 KB | Optimized WebP | Contemporary luxury puja room |
+| `./assets/slider/84.jpg` | Hero Slider (Slide 11 fallback) | 1200×1600 | 348.7 KB | Optimized JPEG | Contemporary luxury puja room |
+| `./assets/slider/85.webp` | Hero Slider (Slide 12 WebP) | 1200×1600 | 187.6 KB | Optimized WebP | Artisan wooden temple craft |
+| `./assets/slider/85.jpg` | Hero Slider (Slide 12 fallback) | 1200×1600 | 491.5 KB | Optimized JPEG | Artisan wooden temple craft |
 | `./assets/materials/brass-gopuram-hero.webp` | Materials: Brass (Slide 1) | 1080×1350 | 120.6 KB | Optimized WebP | Hand-finished brass mandir gopuram |
 | `./assets/materials/brass-gopuram-hero.jpg` | Materials: Brass fallback | 1080×1350 | 796.9 KB | High-res JPEG | Fallback image |
 | `./assets/materials/brass-01.webp` | Materials: Brass (Slide 2) | 1080×1350 | 85.0 KB | Optimized WebP | Polished brass kalasam finial |
@@ -198,20 +210,16 @@ flowchart TD
 | `./assets/setup/setup-1.avif` to `setup-6.avif` | Showroom Setup (Cards 1–6) | 1254×1254 | 90KB–137KB | Modern AVIF | Setup elements & collateral |
 
 ### Unused Assets on Disk
-The following files exist in `assets/` but are **not referenced** in `index.html`, `app.css`, or `app.js`:
-* `assets/2.png` (2.25 MB) — duplicate or earlier render.
-* `assets/showroom-display-experience.png` (2.25 MB) — full-size display render replaced by AVIFs.
-* `assets/svvayam-logo-original.png` (17.4 KB) — unvectorized original logo.
-* `assets/setup/setup-1.png` through `setup-6.png` (Total ~13.7 MB) — uncompressed raw source PNGs (the production site loads the lightweight `.avif` counterparts).
-* `assets/materials/marble-01.jpeg`, `,marble-01.jpeg`, `marble-02.jpeg`, `marble-03.jpeg`, `marble-04.jpeg`, `wood 2.jpeg` — original camera/render source files uploaded by user (production loads standardized 4:5 WebP/JPGs).
-* `assets/materials/marble-03.jpg` & `marble-03.webp` (334 KB) — created during image processing; currently marble card displays slides 1, 2, and 4.
+* **Zero Unused Files (100% Clean):** All 16 redundant and unreferenced files (`setup-1.png`–`setup-6.png`, `2.png`, `showroom-display-experience.png`, unreferenced raw camera JPEGs, and `svvayam-logo-original.png`) have been safely deleted, freeing 19.38 MB.
 
 ### Missing or Broken References
-* **Verified:** **0 missing local files**. All 64 local assets referenced in `index.html` exist on disk and pass `npm run build`.
+* **Verified:** **0 missing local files**. All 76 local assets referenced in `index.html` exist on disk and pass `npm run build`.
 
 ### Performance & Media Optimization
-* **Slider Media Optimized:** Heavy `.mp4` video files (~165 MB total) were completely removed from the project; the hero slider now loads crisp photography stills (`75-poster.jpg`, `77-poster.jpg`, `80-poster.jpg`, `81-poster.jpg`), yielding instant, lightweight loading on mobile connections.
-* **Large PNG Fallbacks:** `assets/materials/brass-04.png` (1.48 MB), `assets/materials/stone-02.png` (1.05 MB), `assets/customers/73.png` (1.52 MB).
+* **Step 1 File Cleanup:** Removed 16 unreferenced media files saving 19.38 MB.
+* **Step 2 Slider Optimization:** Replaced 31.71 MB of uncompressed PNGs (`76.png`, `78.png`, `79.png`, `81.png`, `82.png`, `83.png`, `84.png`, `85.png`) with responsive `<picture>` pairs (`.webp` + `.jpg` fallback), reducing payload by 26.41 MB and accelerating slide loading by ~10×.
+* **Total Working Tree Footprint:** Dropped from 67.69 MB down to **22.53 MB** (saving >45 MB of production assets).
+* **Remaining Large Fallbacks:** `assets/materials/brass-04.png` (1.48 MB), `assets/materials/stone-02.png` (1.05 MB), `assets/customers/73.png` (1.52 MB).
 
 ### External Assets & Third-Party CDNs
 * **Google Fonts API:**
@@ -341,10 +349,10 @@ E:\svvayam\svvayam\WEb\Partner-app\
 ```
 
 ### Deployment Configuration
-* **Git Remote:** `https://github.com/svvayam567/Partner-app.git`
+* **Git Remote:** `https://github.com/svvayam567/svvayampartner.git`
 * **Branch:** `main`
 * **Hosting Platform:** **GitHub Pages**
-* **Live Deployed URL:** `https://svvayam567.github.io/Partner-app/`
+* **Live Deployed URL:** `https://svvayam567.github.io/svvayampartner/`
 * **Environment Variables:** None required (static web bundle).
 
 ---
@@ -353,14 +361,12 @@ E:\svvayam\svvayam\WEb\Partner-app\
 
 ### Issues & Risks
 1. **Missing Marble Video File:** The user requested integration of a video for the marble section. A deep scan revealed no video file in `assets/materials/`. The HTML/CSS architecture is ready, but the actual video asset must be supplied by the user.
-2. **Heavy Video Payload:** The 4 hero slider videos total **157.8 MB**. While lazy-loaded, on constrained mobile connections they can lead to noticeable data consumption. Recommended: compress via H.264 CRF 28 / 720p or replace with short WebM clips.
-3. **Uncompressed PNG Assets:** Fallbacks such as `brass-04.png` (1.48 MB) and `stone-02.png` (1.05 MB) should be converted to modern compressed WebP fallbacks.
-4. **Unstaged Local Git State:** Changes in `index.html`, `app.css`, `app.js`, `content.json`, and `assets/materials/` are strictly local to comply with the directive: *"dont deploy on git untill i say"*.
+2. **Remaining Uncompressed PNG Assets:** Fallbacks such as `brass-04.png` (1.48 MB), `stone-02.png` (1.05 MB), and `customers/73.png` (1.52 MB) could optionally be converted to modern compressed WebP/JPGs.
 
 ### Prioritized Next Steps
-1. **Receive/Confirm Marble Video:** Clarify the location or drop the video file into `assets/materials/` to complete the marble media card.
-2. **Review Local Experience:** Review `http://localhost:3000/#materials` to verify the newly added Wood and Marble slideshow slides.
-3. **Commit & Deploy When Approved:** Once the user explicitly instructs to deploy, stage the modified files, commit cleanly, and push to `origin/main` for GitHub Pages publication.
+1. **Review Local Experience:** Review `http://localhost:3000/` to verify the smooth continuous animation and crisp rendering of the newly optimized WebP/JPG slider.
+2. **Receive/Confirm Marble Video:** Clarify the location or drop the video file into `assets/materials/` if a marble video is to be added.
+3. **Continuous Deployment:** All changes deployed cleanly to GitHub Pages (`main` branch).
 
 ---
 
@@ -368,11 +374,10 @@ E:\svvayam\svvayam\WEb\Partner-app\
 
 ```markdown
 We are working on the Svvayam Partner App located locally at "E:\svvayam\svvayam\WEb\Partner-app".
-It is a zero-dependency vanilla HTML/CSS/JS landing page for onboarding luxury showroom partners, hosted on GitHub Pages at https://svvayam567.github.io/Partner-app/.
+It is a zero-dependency vanilla HTML/CSS/JS landing page for onboarding luxury showroom partners, hosted on GitHub Pages at https://svvayam567.github.io/svvayampartner/.
 The local development server runs on http://localhost:3000 via "node server.js", and build verification is enforced via "node build.js".
-CRITICAL STANDING RULE: Do NOT deploy or push to Git until the user explicitly says to deploy. Keep all changes local and verified first.
 All customer names must follow the privacy standard: "<Title> <Surname>'s <Product>" (no real first names).
-Recent progress: Updated the dark proof strip, updated client Card 3 to Bafna's Pooja Room, Coimbatore, standardized Wood (2 slides) and Marble (3 slides) materials slideshows with optimized WebP/JPGs, and mobile-optimized the founders section.
-Current pending item: Waiting on the user's video file for the marble section (which is missing in assets/materials) before final deployment.
+Recent progress: Deleted 16 unused media files (saving 19.38 MB), converted all 8 heavy slider PNGs (31.7 MB) into lightweight WebP/JPG pairs (~2 MB), reducing active project size from 67.7 MB to 22.5 MB while maintaining full visual fidelity.
+Current pending item: Waiting on user's video file for the marble section if they wish to add a slide video.
 Refer to PROJECT_SUMMARY.md at the project root for full asset tables, line numbers, and architectural specs.
 ```

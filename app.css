@@ -531,6 +531,7 @@ nav a.nav-link.active {
   box-shadow: var(--shadow-md);
 }
 
+.media-slider .slide-item picture,
 .media-slider .slide-item img,
 .media-slider .slide-item video {
   width: 100%;
