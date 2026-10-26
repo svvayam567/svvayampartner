@@ -218,9 +218,9 @@
           </div>
         </article>
 
-        <!-- Card 3: Wood (1 slide - no dots, no sliding) -->
-        <article class="material-card">
-          <div class="material-slideshow" aria-label="Wood image">
+        <!-- Card 3: Wood (2 slides) -->
+        <article class="material-card" data-slideshow>
+          <div class="material-slideshow" aria-label="Wood images">
             <div class="slideshow-track">
               <div class="slideshow-slide active">
                 <picture>
@@ -228,6 +228,16 @@
                   <img src="./assets/materials/wooden-mandap-hero.jpg" alt="Grand mandaps in carved, seasoned wood with tiered roof" width="1080" height="1350" fetchpriority="high">
                 </picture>
               </div>
+              <div class="slideshow-slide">
+                <picture>
+                  <source srcset="./assets/materials/wood-02.webp" type="image/webp">
+                  <img src="./assets/materials/wood-02.jpg" alt="Detailed wood craftsmanship and custom mandir design" loading="lazy" width="1080" height="1350">
+                </picture>
+              </div>
+            </div>
+            <div class="slideshow-dots" role="tablist" aria-label="Wood slides">
+              <button class="slideshow-dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-slide="0" type="button"></button>
+              <button class="slideshow-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-slide="1" type="button"></button>
             </div>
           </div>
           <div class="material-info">
@@ -236,7 +246,7 @@
           </div>
         </article>
 
-        <!-- Card 4: Marble (2 slides) -->
+        <!-- Card 4: Marble (3 slides) -->
         <article class="material-card" data-slideshow>
           <div class="material-slideshow" aria-label="Marble images">
             <div class="slideshow-track">
@@ -252,10 +262,17 @@
                   <img src="./assets/materials/marble-02.jpg" alt="Premium white Indian marble with delicate natural veining" loading="lazy" width="1080" height="1350">
                 </picture>
               </div>
+              <div class="slideshow-slide">
+                <picture>
+                  <source srcset="./assets/materials/marble-04.webp" type="image/webp">
+                  <img src="./assets/materials/marble-04.jpg" alt="Artisan carved marble sanctum and ornate pooja mandir details" loading="lazy" width="1080" height="1350">
+                </picture>
+              </div>
             </div>
             <div class="slideshow-dots" role="tablist" aria-label="Marble slides">
               <button class="slideshow-dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-slide="0" type="button"></button>
               <button class="slideshow-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-slide="1" type="button"></button>
+              <button class="slideshow-dot" role="tab" aria-selected="false" aria-label="Slide 3" data-slide="2" type="button"></button>
             </div>
           </div>
           <div class="material-info">
@@ -274,9 +291,9 @@
         <p>Let your customers hear directly from families who chose Svvayam for their homes.</p>
       </div>
       <div class="video-grid">
-        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/CfVFzK_j0mM?rel=0" title="Svvayam customer testimonial - Ms Gayatri Pal" allowfullscreen loading="lazy"></iframe></div><b>Ms Gayatri Pal</b><small>Customer Story</small></article>
-        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/Oa1VzxB-3Sc?rel=0" title="Svvayam customer testimonial - Mr Nitesh Panda" allowfullscreen loading="lazy"></iframe></div><b>Mr Nitesh Panda</b><small>Customer Story</small></article>
-        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/rZm57pgcfiM?rel=0" title="Svvayam customer testimonial - Ms Vinutha" allowfullscreen loading="lazy"></iframe></div><b>Ms Vinutha</b><small>Customer Story</small></article>
+        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/CfVFzK_j0mM?rel=0" title="Svvayam customer testimonial - Ms. Pal's Temple" allowfullscreen loading="lazy"></iframe></div><b>Ms. Pal's Temple</b><small>Customer Story</small></article>
+        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/Oa1VzxB-3Sc?rel=0" title="Svvayam customer testimonial - Mr. Panda's Mandir" allowfullscreen loading="lazy"></iframe></div><b>Mr. Panda's Mandir</b><small>Customer Story</small></article>
+        <article class="video-card" data-story><div class="media-placeholder"><iframe src="https://www.youtube-nocookie.com/embed/rZm57pgcfiM?rel=0" title="Svvayam customer testimonial - Ms. Vinutha's Temple" allowfullscreen loading="lazy"></iframe></div><b>Ms. Vinutha's Temple</b><small>Customer Story</small></article>
       </div>
     </section>
 
@@ -292,29 +309,28 @@
       <div class="customer-grid">
         <article class="customer-card">
           <div class="customer-image-wrap">
-            <img src="./assets/customers/72.jpg?v=2" alt="The Reddys at Raheja Jade Garden, Devanahalli, Bengaluru with their Svvayam pooja room" loading="lazy" width="1080" height="1080">
+            <img src="./assets/customers/72.jpg?v=2" alt="The Reddys' Temple at Raheja Jade Garden, Devanahalli, Bengaluru with their Svvayam pooja room" loading="lazy" width="1080" height="1080">
           </div>
-          <b class="customer-name">The Reddys</b>
+          <b class="customer-name">The Reddys' Temple</b>
           <span class="customer-role">Raheja Jade Garden</span>
           <small class="customer-location">Devanahalli, Bengaluru</small>
         </article>
 
         <article class="customer-card">
           <div class="customer-image-wrap">
-            <img src="./assets/customers/73.png?v=2" alt="Mr Sanjay Kumar at Casagrand Amethyst, Chennai with bespoke handcrafted wooden mandir by Svvayam" loading="lazy" width="1080" height="1080">
+            <img src="./assets/customers/73.png?v=2" alt="Mr. Kumar's Mandir at Casagrand Amethyst, Chennai with bespoke handcrafted wooden mandir by Svvayam" loading="lazy" width="1080" height="1080">
           </div>
-          <b class="customer-name">Mr Sanjay Kumar</b>
+          <b class="customer-name">Mr. Kumar's Mandir</b>
           <span class="customer-role">Casagrand Amethyst</span>
           <small class="customer-location">Chennai</small>
         </article>
 
         <article class="customer-card">
           <div class="customer-image-wrap">
-            <img src="./assets/customers/74.jpg?v=2" alt="Mr Lohith and Mrs Vinutha at Sobha Windsor, Whitefield, Bengaluru during pooja sanctum installation" loading="lazy" width="1080" height="1080">
+            <img src="./assets/customers/74.jpg?v=2" alt="Bafna's Pooja Room in Coimbatore during pooja room installation by Svvayam" loading="lazy" width="1080" height="1080">
           </div>
-          <b class="customer-name">Mr Lohith &amp; Mrs Vinutha</b>
-          <span class="customer-role">Sobha Windsor</span>
-          <small class="customer-location">Whitefield, Bengaluru</small>
+          <b class="customer-name">Bafna's Pooja Room</b>
+          <small class="customer-location">Coimbatore</small>
         </article>
       </div>
     </section>

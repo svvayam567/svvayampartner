@@ -652,7 +652,8 @@ nav a.nav-link.active {
 }
 
 .slideshow-slide picture,
-.slideshow-slide img {
+.slideshow-slide img,
+.slideshow-slide video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -661,7 +662,8 @@ nav a.nav-link.active {
   will-change: transform;
 }
 
-.material-card:hover .slideshow-slide.active img {
+.material-card:hover .slideshow-slide.active img,
+.material-card:hover .slideshow-slide.active video {
   transform: scale(1.05);
 }
 

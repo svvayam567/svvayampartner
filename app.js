@@ -72,6 +72,7 @@ fetch('./content.json')
           if (f) {
             const src = 'https://www.youtube-nocookie.com/embed/' + data.stories[i].video + '?rel=0';
             if (f.getAttribute('src') !== src) f.src = src;
+            f.title = 'Svvayam customer testimonial - ' + data.stories[i].name;
           }
         }
       });
